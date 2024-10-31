@@ -51,8 +51,8 @@
    ```bash
    sudo java -jar validator.jar password <YOUR_SERVER_IP> --compression-level 0
    ```
-   **Note:** V 13.0.0 introduced validator checks before the node starts. Make sure ports 8085 and 8231 are open for TCP and port 7621 is open for UDP.
-   \n**Note:** If port 7621 is open for UDP but the node is saying that it's offline, then just try starting the node over and over agin, because detecting UDP ports can sometimes be hard.
+   **Note:** V 13.0.0 introduced validator checks before the node starts. Make sure ports 8085 and 8231 are open for TCP and port 7621 is open for UDP.<br>
+   **Note:** If port 7621 is open for UDP but the node is saying that it's offline, then just try starting the node over and over agin, because detecting UDP ports can sometimes be hard.<br>
    PWR Chain is the first chain that supports block compression.
    --compression-level sets the level of compression you want your node to use.
    Compression level varies from 0 - 9. 0 disables compression. 9 sets it to maximum.
