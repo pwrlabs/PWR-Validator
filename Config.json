@@ -1,0 +1,105 @@
+{
+  "description1": "How many api calls can be made per minute by random ips before the ip is limited or banned",
+  "generalApiAccessLimitPerMinute": 300,
+  "generalApiBanLimitPerMinute": 450,
+
+  "description2": "How many api calls can be made per minute by other validator nodes before the ip is limited or banned",
+  "description3": "These 2 variables are only used in validator nodes and not rpc nodes",
+  "validatorApiAccessLimitPerMinute": 5,
+  "validatorApiBanLimitPerMinute": 100,
+
+  "description4": "How many tcp connections can be made per minute by random ips before the ip is limited or banned",
+  "generalTcpAccessLimitPerMinute": 1200,
+  "generalTcpBanLimitPerMinute":1500,
+
+  "description5": "How many tcp connections can be made per minute by other validators before the ip is limited or banned",
+  "description6": "These 2 variables are only used in validator nodes and not rpc nodes",
+  "validatorTcpAccessLimitPerMinute": 200,
+  "validatorTcpBanLimitPerMinute": 400,
+
+  "description7": "How many udp connections can be made per minute by random ips before the ip is limited or banned",
+  "generalUdpAccessLimitPerMinute": 60,
+  "generalUdpBanLimitPerMinute": 90,
+
+  "description8": "How many udp connections can be made per minute by other validator nodes before the ip is limited or banned",
+  "description": "These 2 variables are only used in validator nodes and not rpc nodes",
+  "validatorUdpAccessLimitPerMinute": 3000,
+  "validatorUdpBanLimitPerMinute": 5000,
+
+  "logLevel": 1,
+
+  "apiOpenAccessIps": [
+    {
+      "name": "Ethereum+ RPC Node",
+      "ip": "167.172.160.157"
+    },
+    {
+      "name": "Ethereum+ Faucet",
+      "ip": "138.68.84.236"
+    },
+    {
+      "name": "PWR Faucet",
+      "ip": "207.154.201.217"
+    },
+    {
+      "name": "PWR Explorer Backend",
+      "ip": "164.90.169.136"
+    },
+    {
+      "name": "PWR Public RPC Node",
+      "ip": "145.239.28.93"
+    },
+    {
+      "name": "Discord Validators Bot",
+      "ip": "145.239.28.93"
+    }
+  ],
+
+  "tcpOpenAccessIps": [
+    {
+      "name": "PWR Public RPC Node",
+      "ip": "167.172.183.252"
+    },
+    {
+      "name": "Discord Validators Bot",
+      "ip": "145.239.28.93"
+    }
+  ],
+
+  "udpOpenAccessIps": [
+    {
+      "name": "Discord Validators Bot",
+      "ip": "145.239.28.93"
+    }, 
+    {
+      "name": "Health Check Assistant",
+      "ip": "134.122.82.78"
+    }
+  ],
+  
+  "logShowInfo": false,
+  "logShowError": false,
+
+  "synchronize": true,
+  "description9": "The interval in milliseconds that this node will wait before checking for new blocks",
+  "note": "To properly detect if this node is synced in the Synchronizer class, it is advised to set this value to less than the block time",
+  "synchronizationIntervals": 100,
+  "synchronizationIntervalsOnceSynced": 1000,
+  "description10": "The timeout in milliseconds that this node will wait before giving up on a block fetch",
+  "synchronizationTimeout": 20000,
+  "description13": "The number of blocks to request per synchronization request",
+  "synchronizationRequestBlocksCount": 100,
+  "description14": "The max number of blocks to share per synchronization request from others",
+  "synchronizationShareBlocksCount": 1,
+  "synchronizationShareSize": 3000000,
+  "description11": "If true, this node will synchronize with the validators, if false, it will synchronize with only the provided nodes",
+  "synchronizeWithValidators": true,
+  "description12": "The list of validator or rpc nodes that this node fetches blocks from",
+  "synchronizationNodes": [
+    {
+      "name": "Public RPC Node",
+      "ip": "167.172.183.252"
+    },
+  ]
+
+}
