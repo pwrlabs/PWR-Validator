@@ -26,7 +26,7 @@
 
 3. **Install the validator node software and config file**:
    ```bash
-   wget https://github.com/pwrlabs/PWR-Validator/releases/download/13.1.0/validator.jar
+   wget https://github.com/pwrlabs/PWR-Validator/releases/download/13.2.0/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
@@ -74,7 +74,7 @@
 
     If you wish to run the node in the background, ensuring it remains active after closing the terminal, utilize the `nohup` command:
     ```bash
-    nohup sudo java -jar validator.jar password <YOUR_SERVER_IP> --compression-level 0 &
+    nohup sudo java -jar validator.jar password <YOUR_SERVER_IP> --loop-udp-test &
     ```
 
 11. **Getting Your Private Key**:
