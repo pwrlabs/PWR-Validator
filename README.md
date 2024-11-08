@@ -26,7 +26,7 @@
 
 3. **Install the validator node software and config file**:
    ```bash
-   wget https://github.com/pwrlabs/PWR-Validator/releases/download/13.2.6/validator.jar
+   wget https://github.com/pwrlabs/PWR-Validator/releases/download/13.2.7/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
