@@ -8,7 +8,7 @@
 #### **Requirements**:
 - **CPU**: 1 vCPU
 - **Memory**: 1 GB RAM
-- **Disk**: 50 GB HDD or higher
+- **Disk**: 100 GB HDD or higher
 - **Open TCP Ports**: 8231, 8085
 - **Open UDP Port**: 7621
 
@@ -26,7 +26,7 @@
 
 3. **Install the validator node software and config file**:
    ```bash
-   wget https://github.com/pwrlabs/PWR-Validator/releases/download/13.2.30/validator.jar
+   wget https://github.com/pwrlabs/PWR-Validator/releases/download/14.0.0/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
