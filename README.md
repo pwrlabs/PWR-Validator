@@ -34,7 +34,7 @@
 
    Replace `<YOUR_SERVER_IP>` with your server's actual IP.
    ```bash
-   sudo java -jar validator.jar <YOUR_SERVER_IP>
+   sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar <YOUR_SERVER_IP>
    ```
    **Note:** V 13.0.0 introduced validator checks before the node starts. Make sure ports 8085 and 8231 are open for TCP and port 7621 is open for UDP.<br>
    **Note:** If port 7621 is open for UDP but the node is saying that it's offline, then just try starting the node over and over agin, because detecting UDP ports can sometimes be hard.<br>
@@ -56,7 +56,7 @@
 
     If you wish to run the node in the background, ensuring it remains active after closing the terminal, utilize the `nohup` command:
     ```bash
-    nohup sudo java -jar validator.jar <YOUR_SERVER_IP> --loop-udp-test &
+    nohup sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar <YOUR_SERVER_IP> --loop-udp-test &
     ```
     
 Congratulations, you've now set up and run a PWR Chain validator node!
