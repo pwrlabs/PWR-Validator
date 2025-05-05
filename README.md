@@ -25,17 +25,18 @@
    ```
 
 3. **Open Required Ports**:
-   ```bash# For UFW (Uncomplicated Firewall)
-sudo ufw allow 8231/tcp
-sudo ufw allow 8085/tcp
-sudo ufw reload
+   ```bash
+   For UFW (Uncomplicated Firewall)
+   sudo ufw allow 8231/tcp
+   sudo ufw allow 8085/tcp
+   sudo ufw reload
 
-# For iptables
-sudo iptables -A INPUT -p tcp --dport 8231 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 8085 -j ACCEPT
-sudo netfilter-persistent save
-Note: If you're using a cloud provider, you may also need to configure the ports in their firewall/security group settings.
-```
+   For iptables
+   sudo iptables -A INPUT -p tcp --dport 8231 -j ACCEPT
+   sudo iptables -A INPUT -p tcp --dport 8085 -j ACCEPT
+   sudo netfilter-persistent save
+   ```
+   Note: If you're using a cloud provider, you may also need to configure the ports in their firewall/security group settings.
 
 
 4. **Install the validator node software and config file**:
