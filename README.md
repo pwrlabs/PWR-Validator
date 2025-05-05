@@ -24,27 +24,46 @@
    sudo apt install default-jdk
    ```
 
-3. **Install the validator node software and config file**:
+3. **Open Required Ports**:
+   bash# For UFW (Uncomplicated Firewall)
+sudo ufw allow 8231/tcp
+sudo ufw allow 8085/tcp
+sudo ufw allow 7621/udp
+sudo ufw reload
+
+# For iptables
+sudo iptables -A INPUT -p tcp --dport 8231 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8085 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 7621 -j ACCEPT
+sudo netfilter-persistent save
+Note: If you're using a cloud provider, you may also need to configure the ports in their firewall/security group settings.
+
+
+4. **Install the validator node software and config file**:
    ```bash
-   wget https://github.com/pwrlabs/PWR-Validator/releases/download/14.0.10/validator.jar
+   wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.11.9/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
-4. **Run the Node**:
+5. **Setup your password**:
+   ```bash
+   echo "your password here" > password 
+   ```
+
+6. **Run the Node**:
 
    Replace `<YOUR_SERVER_IP>` with your server's actual IP.
    ```bash
-   sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar <YOUR_SERVER_IP>
+   nohup sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar --ip <your nodes ip here> --password password & 
    ```
-   **Note:** V 13.0.0 introduced validator checks before the node starts. Make sure ports 8085 and 8231 are open for TCP and port 7621 is open for UDP.<br>
-   **Note:** If port 7621 is open for UDP but the node is saying that it's offline, then just try starting the node over and over agin, because detecting UDP ports can sometimes be hard.<br>
+   **Note:** Make sure ports 8085 and 8231 are open for TCP.
 
-5. **Get Your Address**:
+7. **Get Your Address**:
      ```
-     curl localhost:8085/address/
+     java -jar validator.jar get-address password
      ```
 
-6. **Become a Validator Node**:
+8. **Become a Validator Node**:
 
    - Initially, your node will synchronize with the blockchain but will not assume validator responsibilities until it possesses staked PWR Coins.
    
@@ -52,11 +71,11 @@
    
    - After claiming your coins, your node will initiate a transaction to enlist as a validator.
 
-7. **Running in the Background**:
+9. **Checking your nodes log**:
 
-    If you wish to run the node in the background, ensuring it remains active after closing the terminal, utilize the `nohup` command:
+    If you wish to check your nodes log, you can do so using the following command:
     ```bash
-    nohup sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar <YOUR_SERVER_IP> --loop-udp-test &
+    tail -n 1000 nohup.out -f 
     ```
     
 Congratulations, you've now set up and run a PWR Chain validator node!
