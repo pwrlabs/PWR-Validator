@@ -25,13 +25,15 @@
    ```
 
 3. **Open Required Ports**:
-   ```bash
    For UFW (Uncomplicated Firewall)
+      ```bash
    sudo ufw allow 8231/tcp
    sudo ufw allow 8085/tcp
    sudo ufw reload
-
+      ```
+      
    For iptables
+      ```bash
    sudo iptables -A INPUT -p tcp --dport 8231 -j ACCEPT
    sudo iptables -A INPUT -p tcp --dport 8085 -j ACCEPT
    sudo netfilter-persistent save
@@ -39,18 +41,18 @@
    Note: If you're using a cloud provider, you may also need to configure the ports in their firewall/security group settings.
 
 
-4. **Install the validator node software and config file**:
+5. **Install the validator node software and config file**:
    ```bash
    wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.11.9/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
-5. **Setup your password**:
+6. **Setup your password**:
    ```bash
    echo "your password here" > password 
    ```
 
-6. **Run the Node**:
+7. **Run the Node**:
 
    Replace `<YOUR_SERVER_IP>` with your server's actual IP.
    ```bash
@@ -58,12 +60,12 @@
    ```
    **Note:** Make sure ports 8085 and 8231 are open for TCP.
 
-7. **Get Your Address**:
+8. **Get Your Address**:
      ```
      java -jar validator.jar get-address password
      ```
 
-8. **Become a Validator Node**:
+9. **Become a Validator Node**:
 
    - Initially, your node will synchronize with the blockchain but will not assume validator responsibilities until it possesses staked PWR Coins.
    
@@ -71,7 +73,7 @@
    
    - After claiming your coins, your node will initiate a transaction to enlist as a validator.
 
-9. **Checking your nodes log**:
+10. **Checking your nodes log**:
 
     If you wish to check your nodes log, you can do so using the following command:
     ```bash
