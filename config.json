@@ -63,7 +63,7 @@
   "description13": "The number of blocks to request per synchronization request",
   "synchronizationRequestBlocksCount": 100,
   "description14": "The max number of blocks to share per synchronization request from others",
-  "synchronizationShareBlocksCount": 1,
+  "synchronizationShareBlocksCount": 10,
   "synchronizationShareSize": 3000000,
   "description11": "If true, this node will synchronize with the validators, if false, it will synchronize with only the provided nodes",
   "synchronizeWithValidators": true,
