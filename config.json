@@ -30,24 +30,8 @@
 
   "apiOpenAccessIps": [
     {
-      "name": "Ethereum+ RPC Node",
-      "ip": "167.172.160.157"
-    },
-    {
-      "name": "Ethereum+ Faucet",
-      "ip": "138.68.84.236"
-    },
-    {
-      "name": "PWR Faucet",
-      "ip": "207.154.201.217"
-    },
-    {
-      "name": "PWR Explorer Backend",
-      "ip": "164.90.169.136"
-    },
-    {
       "name": "PWR Public RPC Node",
-      "ip": "145.239.28.93"
+      "ip": "167.172.183.252"
     },
     {
       "name": "Discord Validators Bot",
@@ -63,17 +47,6 @@
     {
       "name": "Discord Validators Bot",
       "ip": "145.239.28.93"
-    }
-  ],
-
-  "udpOpenAccessIps": [
-    {
-      "name": "Discord Validators Bot",
-      "ip": "145.239.28.93"
-    }, 
-    {
-      "name": "Health Check Assistant",
-      "ip": "134.122.82.78"
     }
   ],
   
