@@ -10,21 +10,12 @@
 
   "description4": "How many tcp connections can be made per minute by random ips before the ip is limited or banned",
   "generalTcpAccessLimitPerMinute": 1200,
-  "generalTcpBanLimitPerMinute":4000,
+  "generalTcpBanLimitPerMinute":10000,
 
   "description5": "How many tcp connections can be made per minute by other validators before the ip is limited or banned",
   "description6": "These 2 variables are only used in validator nodes and not rpc nodes",
-  "validatorTcpAccessLimitPerMinute": 5000,
-  "validatorTcpBanLimitPerMinute": 10000,
-
-  "description7": "How many udp connections can be made per minute by random ips before the ip is limited or banned",
-  "generalUdpAccessLimitPerMinute": 60,
-  "generalUdpBanLimitPerMinute": 90,
-
-  "description8": "How many udp connections can be made per minute by other validator nodes before the ip is limited or banned",
-  "description": "These 2 variables are only used in validator nodes and not rpc nodes",
-  "validatorUdpAccessLimitPerMinute": 3000,
-  "validatorUdpBanLimitPerMinute": 5000,
+  "validatorTcpAccessLimitPerMinute": 10000,
+  "validatorTcpBanLimitPerMinute": 20000,
 
   "logLevel": 1,
 
