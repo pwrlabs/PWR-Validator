@@ -6,11 +6,10 @@
 **Important Note**: This is the inaugural testnet launch. While we strive for perfection, there might be unforeseen issues. We appreciate all feedback, bug reports, or any other issues reported in our [Discord server](https://discord.gg/DJkcuy9SAg).
 
 #### **Requirements**:
-- **CPU**: 1 vCPU
-- **Memory**: 1 GB RAM
+- **CPU**: 4 vCPU
+- **Memory**: 2 GB RAM
 - **Disk**: 100 GB HDD or higher
 - **Open TCP Ports**: 8231, 8085
-- **Open UDP Port**: 7621
 
 #### **Setup on Ubuntu Server**:
 
@@ -43,7 +42,7 @@
 
 5. **Install the validator node software and config file**:
    ```bash
-   wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.12.41/validator.jar
+   wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.15.3/validator.jar
    wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
    ```
 
