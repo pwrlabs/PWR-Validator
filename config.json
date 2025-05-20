@@ -17,6 +17,8 @@
   "validatorTcpAccessLimitPerMinute": 10000,
   "validatorTcpBanLimitPerMinute": 20000,
 
+  "udpBroadcastCount": 1,
+
   "logLevel": 1,
 
   "apiOpenAccessIps": [
