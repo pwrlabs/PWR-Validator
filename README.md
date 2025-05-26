@@ -6,7 +6,7 @@
 
 ### Requirements
 
-- **CPU**: 2 vCPU
+- **CPU**: 1 vCPU
 - **Memory**: 2 GB RAM  
 - **Disk**: 100 GB HDD or higher
 - **Open TCP Ports**: 8231, 8085
