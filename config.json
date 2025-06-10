@@ -55,12 +55,20 @@
   "synchronizationTimeout": 20000,
   "synchronizationShareSize": 3000000,
   "description11": "If true, this node will synchronize with the validators, if false, it will synchronize with only the provided nodes",
-  "synchronizeWithValidators": true,
+  "synchronizeWithValidators": false,
   "description12": "The list of validator or rpc nodes that this node fetches blocks from",
   "synchronizationNodes": [
     {
       "name": "Public RPC Node",
       "ip": "162.19.170.236"
+    },
+    {
+      "name": "Validator 1",
+      "ip": "51.68.155.92"
+    },
+    {
+      "name": "Validator 2",
+      "ip": "51.68.155.93"
     }
   ]
 
