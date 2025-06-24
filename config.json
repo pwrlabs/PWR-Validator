@@ -46,6 +46,8 @@
   "logShowInfo": false,
   "logShowError": false,
 
+  "peersCount": 50,
+  
   "synchronize": true,
   "description9": "The interval in milliseconds that this node will wait before checking for new blocks",
   "note": "To properly detect if this node is synced in the Synchronizer class, it is advised to set this value to less than the block time",
