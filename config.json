@@ -18,7 +18,9 @@
   "validatorTcpBanLimitPerMinute": 20000,
 
   "udpBroadcastCount": 1,
-
+  
+  "transactionSharingPeerCount": 10,
+  
   "logLevel": 1,
 
   "apiOpenAccessIps": [
