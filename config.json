@@ -54,7 +54,7 @@
   "description9": "The interval in milliseconds that this node will wait before checking for new blocks",
   "note": "To properly detect if this node is synced in the Synchronizer class, it is advised to set this value to less than the block time",
   "synchronizationIntervals": 100,
-  "synchronizationIntervalsOnceSynced": 1000,
+  "synchronizationIntervalsOnceSynced": 200,
   "description10": "The timeout in milliseconds that this node will wait before giving up on a block fetch",
   "synchronizationTimeout": 20000,
   "synchronizationShareSize": 3000000,
