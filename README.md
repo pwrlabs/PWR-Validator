@@ -6,10 +6,12 @@
 
 ### Requirements
 
-- **CPU**: 1 vCPU
-- **Memory**: 2 GB RAM  
+- **CPU**: 2 vCPU
+- **Memory**: 4 GB RAM  
 - **Disk**: 100 GB HDD or higher
-- **Open TCP Ports**: 8231, 8085
+- **Bandwidth**: 500Mbps or higher
+- **Open TCP Ports**: 8231, 8085, 9864
+- **Open UDP Ports**: 7621
 
 ### Setup on Ubuntu Server
 
@@ -48,7 +50,7 @@ sudo netfilter-persistent save
 #### 4. Install the validator node software and config file
 
 ```bash
-wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.50.0/validator.jar
+wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.58.2/validator.jar
 wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
 ```
 
