@@ -34,6 +34,8 @@ sudo apt install default-jdk
 ```bash
 sudo ufw allow 8231/tcp
 sudo ufw allow 8085/tcp
+sudo ufw allow 9864/tcp
+sudo ufw allow 7621/udp
 sudo ufw reload
 ```
 
@@ -42,6 +44,8 @@ sudo ufw reload
 ```bash
 sudo iptables -A INPUT -p tcp --dport 8231 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 8085 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 9864 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 7621 -j ACCEPT
 sudo netfilter-persistent save
 ```
 
