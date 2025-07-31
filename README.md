@@ -9,7 +9,7 @@
 - **CPU**: 2 vCPU
 - **Memory**: 4 GB RAM  
 - **Disk**: 100 GB HDD or higher
-- **Bandwidth**: 500Mbps or higher
+- **Bandwidth**: 400Mbps download or higher. 800Mbps upload or higher
 - **Open TCP Ports**: 8231, 8085, 9864
 - **Open UDP Ports**: 7621
 
