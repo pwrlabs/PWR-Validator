@@ -63,16 +63,12 @@
   "description12": "The list of validator or rpc nodes that this node fetches blocks from",
   "synchronizationNodes": [
     {
+      "name": "Synchronization Node",
+      "ip": "162.19.169.161"
+    },
+    {
       "name": "Public RPC Node",
       "ip": "162.19.170.236"
-    },
-    {
-      "name": "Validator 1",
-      "ip": "51.68.155.92"
-    },
-    {
-      "name": "Validator 2",
-      "ip": "51.68.155.93"
     }
   ]
 
