@@ -16,8 +16,6 @@
   "description6": "These 2 variables are only used in validator nodes and not rpc nodes",
   "validatorTcpAccessLimitPerMinute": 10000,
   "validatorTcpBanLimitPerMinute": 20000,
-
-  "udpBroadcastCount": 1,
   
   "transactionSharingPeerCount": 10,
   
