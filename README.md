@@ -24,7 +24,7 @@ sudo apt update
 #### 2. Install Java
 
 ```bash
-sudo apt install default-jdk
+sudo apt install openjdk-24-jre-headless  
 ```
 
 #### 3. Open Required Ports
